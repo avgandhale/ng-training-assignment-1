@@ -1,0 +1,251 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 30px;
+}
+
+.task-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.task-list th, .task-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-list th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 1rem;
+}
+
+.task-list td {
+  background-color: #fff;
+  color: #666;
+}
+
+.task-list td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.task-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Delete Modal Special Styles */
+.modal-content h2 {
+  color: #e74c3c;
+}
+
+.modal-content button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.modal-content button:hover {
+  background-color: #c0392b;
+}
+
+/* General form container */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.form-label {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input fields styling */
+.form-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+/* Error styling */
+.error-input {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+/* Input field focus effect */
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.form-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Search bar styling */
+.search-bar {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.MainContainer{
+  border: #666;
+  border-width: 5px;
+}
